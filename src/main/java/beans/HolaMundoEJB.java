@@ -6,15 +6,19 @@
 package beans;
 
 import javax.ejb.Stateless;
+
 /**
  *
  * @author jpm1590
  */
 @Stateless
 public class HolaMundoEJB {
-    
-    public int sumar(int a, int b){
+
+    public int sumar(int a, int b) {
         return a + b;
     }
-    
+
+    public int restar(int a, int b) {
+        return a - b;
+    }
 }

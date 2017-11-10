@@ -35,11 +35,16 @@ public class HolaMundoEJBTest {
     }
     
     @Test
-    public void testAddNumbers() throws Exception {
-        int d1 = 3;
-        int d2 = 4;
-        int resultado = ejb.sumar(d1, d2);
-        assertEquals(resultado, (d1 + d2));
-        System.out.println("El resultado de la op es " + resultado);
+    public void testNumbers() throws Exception {
+        int date1 = 3;
+        int date2 = 4;
+        int resSum = ejb.sumar(date1, date2);
+        int resRest = ejb.restar(date1, date2);
+        assertEquals(resSum, (date1 + date2));
+        assertEquals(resRest, date1 -date2);
+        System.out.println("El resultado de la suma es " + resSum);
+        System.out.println("El resultado de la resta es " + resRest);
+        
     }
+    
 }
