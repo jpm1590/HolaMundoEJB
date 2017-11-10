@@ -15,6 +15,7 @@ import javax.ejb.embeddable.EJBContainer;
 import javax.naming.Context;
 
 import beans.HolaMundoEJB;
+import org.junit.After;
 
 /**
  *
@@ -45,6 +46,11 @@ public class HolaMundoEJBTest {
         System.out.println("El resultado de la suma es " + resSum);
         System.out.println("El resultado de la resta es " + resRest);
         
+    }
+    
+    @After
+    public void finalizarPrueba() throws Exception {
+        contexto.close();
     }
     
 }
