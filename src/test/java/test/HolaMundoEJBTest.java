@@ -42,7 +42,7 @@ public class HolaMundoEJBTest {
         int resSum = ejb.sumar(date1, date2);
         int resRest = ejb.restar(date1, date2);
         assertEquals(resSum, (date1 + date2));
-        assertEquals(resRest, date1 -date2);
+        assertEquals(resRest, date1 - date2);
         System.out.println("El resultado de la suma es " + resSum);
         System.out.println("El resultado de la resta es " + resRest);
         
